@@ -1,3 +1,30 @@
 ﻿<h1 style="color:blue">
     He creado mi primera PAGINA!!!!
 </h1>
+
+DECLARACION DE VARIABLES
+@{
+    //ESTAS VARIABLES SON LOCALES EN LA PAGINA
+    //TODO ESTO ES CODIGO PURO C#
+    int valor = 14;
+    string texto = "Hoy es viernes";
+    valor += 1;
+    texto = texto.ToUpper();
+}
+
+CODIGO LOGICO (CONDICIONES Y BUCLES)
+@if (valor >= 0){
+    //TODO ES CODIGO C#
+    texto = "POSITIVO";
+    <h2>POSITIVO</h2>
+    //MAS CODIGO C#
+}else{
+    //CODIGO C# 
+    texto = "NEGATIVO";
+    <h2>NEGATIVO</h2>
+}
+
+DIBUJAR VARIABLES
+<h1 style="color:red">@texto</h1>
+<h1 style="color:blueviolet">@texto.ToLower()</h1>
+<h1 style="color:brown">Número: @valor</h1>
