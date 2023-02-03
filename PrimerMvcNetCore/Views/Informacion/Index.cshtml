@@ -7,4 +7,19 @@
             Controlador --> Vista
         </a>
     </li>
+    <li>
+        @Html.ActionLink("Vista --> Controller GET sin params"
+        , "VistaControladorGet", "Informacion",
+        new { app = "Mvc Net Core"}) | 
+
+        @Html.ActionLink("Vista --> Controller GET"
+        , "VistaControladorGet", "Informacion",
+        new { app = "Mvc Net Core", version = 6 })
+    </li>
+    <li>
+        <a asp-controller="Informacion"
+            asp-action="VistaControladorPost">
+            Vista --> Controller POST
+        </a>
+    </li>
 </ul>
