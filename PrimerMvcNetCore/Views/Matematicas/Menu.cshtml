@@ -1,0 +1,15 @@
+﻿<h1>Menú de matemáticas</h1>
+
+<ul>
+    <li>
+        @Html.ActionLink("Sumar 2 + 6", "SumarNumerosGet"
+        , "Matematicas"
+        , new { numero1 = 2, numero2 = 6 })
+    </li>
+    <li>
+        <a asp-controller="Matematicas"
+            asp-action="SumarNumerosPost">
+            Sumar números POST
+        </a>
+    </li>
+</ul>

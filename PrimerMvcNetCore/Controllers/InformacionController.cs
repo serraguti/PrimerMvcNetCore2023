@@ -48,16 +48,17 @@ namespace PrimerMvcNetCore.Controllers
         }
 
         [HttpPost]
-        public IActionResult 
-            VistaControladorPost(string cajanombre
-            , string cajaemail, int edad)
+        public IActionResult VistaControladorPost
+            (Persona persona, string aficiones)
         {
             ViewData["DATOS"] = "Nombre: "
-                + cajanombre
+                + persona.Nombre
                 + ", Email: "
-                + cajaemail
+                + persona.Email
                 + ", Edad: "
-                + edad;
+                + persona.Edad
+                + ", Aficiones: "
+                + aficiones;
             return View();
         }
     }
